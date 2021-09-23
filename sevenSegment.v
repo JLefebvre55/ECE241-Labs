@@ -1,4 +1,4 @@
-module hello(input c1, input c0, output [0:6] h);
+module sevenSegment(input c1, input c0, output [6:0] h);
     assign h[0] = ~c1 & c0;
     assign h[1] = c0;
     assign h[2] = ~c1 | c0;
