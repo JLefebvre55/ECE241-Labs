@@ -1,5 +1,5 @@
 // NOT
-module v7404 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8,pin10, pin12);
+module v7404 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8, pin10, pin12);
     input pin1, pin3, pin5, pin9, pin11, pin13;
     output pin2, pin4, pin6, pin8, pin10, pin12;
     assign pin2 = ~pin1;
@@ -11,7 +11,7 @@ module v7404 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8,pin10
 endmodule
 
 // AND
-module v7408 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8,pin10, pin12);
+module v7408 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8, pin10, pin12);
     input pin1, pin2, pin4, pin5, pin9, pin10, pin12, pin13;
     output pin3, pin6, pin8, pin11;
     assign pin3 = pin1 & pin2;
@@ -21,7 +21,7 @@ module v7408 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8,pin10
 endmodule
 
 // OR
-module v7432 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8,pin10, pin12);
+module v7432 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8, pin10, pin12);
     input pin1, pin2, pin4, pin5, pin9, pin10, pin12, pin13;
     output pin3, pin6, pin8, pin11;
     assign pin3 = pin1 | pin2;
@@ -31,7 +31,7 @@ module v7432 (pin1, pin3, pin5, pin9, pin11, pin13, pin2, pin4, pin6, pin8,pin10
 endmodule
 
 // m= ~s & x | s & y
-module mux2to1 (x,y,s,m);
+module mux2to1 (x, y, s, m);
     input x, y, s;
     output m;
     wire a, b, c;
